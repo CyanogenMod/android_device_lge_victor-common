@@ -1,5 +1,0 @@
-#!/system/bin/sh
-
-/system/xbin/rmmod -f fbconsole >/dev/null 2>&1
-
-exit 0

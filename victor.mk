@@ -98,7 +98,6 @@ PRODUCT_COPY_FILES += \
 
 # Offmode charging
 PRODUCT_COPY_FILES += \
-    device/lge/victor-common/prebuilt/02removefbcon:system/etc/init.d/02removefbcon \
     device/lge/victor-common/misc/chargerlogo:root/sbin/chargerlogo \
     device/lge/victor-common/misc/wallpaper:root/sbin/wallpaper \
     device/lge/victor-common/misc/initlogo.rle:root/initlogo.rle \

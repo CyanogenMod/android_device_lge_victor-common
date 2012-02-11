@@ -1,5 +1,4 @@
 on boot-pause
-    insmod /system/lib/modules/fbconsole.ko
     start rmt_storage
     start adbd
     exec sbin/chargerlogo
