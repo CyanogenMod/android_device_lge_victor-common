@@ -1,0 +1,20 @@
+#
+key 158   BACK
+key 230   HOME
+key 60    SOFT_RIGHT
+key 62    ENDCALL           WAKE_DROPPED
+key 229   MENU
+key 59    MENU
+key 139   MENU
+key 231   CALL
+key 61    CALL
+#key 102   ENDCALL           WAKE_DROPPED
+key 115   VOLUME_UP         WAKE
+key 114   VOLUME_DOWN       WAKE
+key 212   CAMERA
+key 247   FOCUS
+key 217   SEARCH
+
+key 226   HEADSETHOOK       WAKE
+key 116   POWER             WAKE
+key 107   ENDCALL           WAKE_DROPPED
