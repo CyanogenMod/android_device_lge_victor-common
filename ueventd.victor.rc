@@ -13,75 +13,30 @@
 /dev/msm_mvs              0666   root       root
 /dev/lge_amp              0660   system     system
 
-/dev/null                 0666   root       root
-/dev/zero                 0666   root       root
-/dev/full                 0666   root       root
-/dev/ptmx                 0666   root       root
-/dev/tty                  0666   root       root
-/dev/random               0666   root       root
-/dev/urandom              0666   root       root
-/dev/ashmem               0666   root       root
-/dev/binder               0666   root       root
-
 /dev/broadcast0           0660   broadcast  root
 /dev/tsif0                0660   broadcast  root
-/dev/log/*                0662   root       log
-
 /dev/oncrpc/*             0660   radio      system
-
-# the msm hw3d client device node is world writable/readable.
-/dev/msm_hw3dc            0666   root       root
 
 # the DIAG device node is world writable/readable.
 /dev/diag                 0666   root       root
 
 /dev/rfkill               0660   wifi       wifi
-
-# these should not be world writable
-/dev/diag_arm9            0660   radio      radio
-/dev/android_adb          0660   adb        adb
-/dev/android_adb_enable   0660   adb        adb
-/dev/ttyMSM0              0600   bluetooth  bluetooth
 /dev/ttyHS0               0660   bluetooth  bluetooth
-/dev/uinput               0660   system     bluetooth
-/dev/alarm                0664   system     radio
-/dev/tty0                 0660   root       system
 /dev/graphics/*           0664   system     graphics
-/dev/msm_hw3dm            0660   system     graphics
 /dev/msm_rotator          0660   system     graphics
 /dev/input/*              0660   system     input
-/dev/eac                  0660   root       audio
-/dev/cam                  0660   root       camera
-/dev/pmem                 0660   system     graphics
 /dev/pmem_audio           0660   system     audio
-/dev/pmem_adsp*           0660   system     audio
 /dev/pmem_smipool*        0660   system     camera
-/dev/pmem_camera*         0660   system     camera
-/dev/adsp/*               0660   system     audio
-/dev/snd/*                0660   system     audio
-/dev/mt9t013              0660   system     system
 /dev/msm_camera/*         0660   media      system
-/dev/lightsensor          0640   system     system
 # LGE_CHANGE_S taeho.youn@lge.com		2011.3.3
 /dev/msm_audio_misc	0660	system	audio
 /dev/radio0               0644   fm_radio   fm_radio
 /dev/i2c-2                0664   root       system
 /dev/i2c-4                0664   root       system
 /dev/msm_pcm_in*          0660   system     audio
-/dev/msm_pcm_out*         0660   system     audio
 /dev/msm_voicememo        0660   system     audio
-/dev/msm_pcm_ctl*         0660   system     audio
-/dev/msm_snd*             0660   system     audio
-/dev/msm_mp3*             0660   system     audio
 /dev/msm_pcm_lp_dec       0660   system     audio
-/dev/msm_audpre           0660   system     audio
-/dev/msm_audio_ctl        0660   system     audio
-/dev/vdec                 0660   system     audio
 /dev/qce                  0660   system     audio
-/dev/q6venc               0660   system     audio
-/dev/snd/dsp              0660   system     audio
-/dev/snd/dsp1             0660   system     audio
-/dev/snd/mixer            0660   system     audio
 /dev/smd0                 0660   radio      radio
 /dev/smd7                 0640   radio      radio
 /dev/smd16                0640   radio      radio
@@ -104,22 +59,8 @@
 /dev/sdioctl6             0640   radio      radio
 /dev/sdioctl7             0640   radio      radio
 /dev/qemu_trace           0666   system     system
-/dev/qmi                  0640   radio      radio
-/dev/qmi0                 0640   radio      radio
-/dev/qmi1                 0640   radio      radio
-/dev/qmi2                 0640   radio      radio
-/dev/bus/usb/*            0660   root       usb
 /dev/gemini0              0660   system     system
-/dev/usb_accessory        0660   root       usb
-
-# CDMA radio interface MUX
-/dev/ts0710mux*           0640   radio      radio
-/dev/ppp                  0660   radio      vpn
 /dev/tun                  0640   vpn        vpn
-
-# sysfs properties
-/sys/devices/virtual/input/input*   enable      0660  root   input
-/sys/devices/virtual/input/input*   poll_delay  0660  root   input
 
 # Permissions for video
 /dev/msm_vidc_reg         0660  system       audio
@@ -142,5 +83,3 @@
 /dev/msm_preproc_ctl      0660  system       audio
 /dev/msm_a2dp_in          0640  system       audio
 /dev/msm_amrnb_in         0640  system       audio
-
-/sys/devices/virtual/usb_composite/*   enable      0664  root   system
