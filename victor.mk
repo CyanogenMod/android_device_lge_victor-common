@@ -23,7 +23,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_COPY_FILES += \
     device/lge/victor-common/init.victor.rc:root/init.victor.rc \
     device/lge/victor-common/init.victor.usb.rc:root/init.victor.usb.rc \
-    device/lge/e730/ueventd.victor.rc:root/ueventd.victor.rc
+    device/lge/victor-common/ueventd.victor.rc:root/ueventd.victor.rc
 
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
