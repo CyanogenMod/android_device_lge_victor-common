@@ -149,9 +149,9 @@ service bugreport /system/bin/bugmailer.sh -v
     oneshot
     keycodes 114 115 116
 
-service hciattach /system/bin/sh /system/bin/init.qcom.bt.sh
+service hciattach /system/bin/init.qcom.bt.sh
     class main
-    user bluetooth
+    #user bluetooth
     group bluetooth net_bt_admin
     disabled
 

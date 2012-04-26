@@ -152,6 +152,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/victor-common/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh
 
+PRODUCT_PACKAGES += \
+    hcitool
+
 # The splashscreen and Offmode charging
 PRODUCT_COPY_FILES += \
     device/lge/victor-common/recovery/rmt_storage/rmt_storage:/root/sbin/rmt_storage \
