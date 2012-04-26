@@ -48,7 +48,8 @@ PRODUCT_COPY_FILES += \
     device/lge/victor-common/configs/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
 PRODUCT_PACKAGES += \
-    hwaddrs
+    hwaddrs \
+    hcitool
 
 PRODUCT_PACKAGES += \
     lights.victor \
