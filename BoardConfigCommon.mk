@@ -42,6 +42,8 @@ TARGET_SPECIFIC_HEADER_PATH := device/lge/victor-common/include
 
 TARGET_BOOTLOADER_BOARD_NAME := victor
 
+TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
+
 # Wifi related defines
 BOARD_WLAN_DEVICE := bcm4330
 WIFI_DRIVER_FW_PATH_STA         := "/system/etc/firmware/rtecdc.bin"
@@ -128,3 +130,4 @@ BOARD_USES_RECOVERY_CHARGEMODE := false
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/victor-common/recovery/graphics.c
 
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
+
