@@ -124,8 +124,8 @@ service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
     oneshot
     keycodes 114 115
 
-service hciattach /system/bin/sh /system/bin/init.qcom.bt.sh
-    user bluetooth
+service hciattach /system/bin/init.qcom.bt.sh
+    #user bluetooth
     group bluetooth net_bt_admin
     disabled
 
