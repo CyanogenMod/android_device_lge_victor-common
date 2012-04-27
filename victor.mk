@@ -62,6 +62,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
+# Configure the qcom surface compositor
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=dyn \
+    debug.enabletr=true
+
 # Set default USB interface for first boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
