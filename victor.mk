@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.gmsversion=2.3_r6 \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
-    dalvik.vm.dexopt-flags=m=y
+    dalvik.vm.dexopt-flags=m=y \
+    ro.bt.bdaddr_path=/data/misc/bd_addr
 
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -45,6 +46,9 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/victor-common/overlay
 PRODUCT_COPY_FILES += \
     device/lge/victor-common/configs/spn-conf.xml:system/etc/spn-conf.xml \
     device/lge/victor-common/configs/voicemail-conf.xml:system/etc/voicemail-conf.xml
+
+PRODUCT_PACKAGES += \
+    hwaddrs
 
 PRODUCT_PACKAGES += \
     lights.victor \
