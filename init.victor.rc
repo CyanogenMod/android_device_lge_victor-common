@@ -101,6 +101,10 @@ on early-fs
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+    exec /system/bin/hwaddrs
+
 on property:dev.bootcomplete=1
     chown root root /sys/module/lowmemorykiller/parameters/minfree
     chmod 0644 /sys/module/lowmemorykiller/parameters/minfree
@@ -184,3 +188,4 @@ service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
 
 on property:init.svc.bootanim=stopped
     start qcom-post-boot
+

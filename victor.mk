@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.gmsversion=2.3_r6 \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
-    dalvik.vm.dexopt-flags=m=y
+    dalvik.vm.dexopt-flags=m=y \
+    ro.bt.bdaddr_path=/data/misc/bd_addr
 
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -158,6 +159,7 @@ PRODUCT_COPY_FILES += \
     device/lge/victor-common/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh
 
 PRODUCT_PACKAGES += \
+    hwaddrs \
     hcitool
 
 # The splashscreen and Offmode charging
