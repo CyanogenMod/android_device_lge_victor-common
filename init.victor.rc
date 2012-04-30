@@ -99,6 +99,10 @@ on fs
     write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate 75000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 245760
 
+on post-fs
+    setprop vold.post_fs_data_done 1
+    exec /system/bin/hwaddrs
+
 service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
     -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
     group wifi inet
