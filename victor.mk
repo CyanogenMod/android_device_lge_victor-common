@@ -162,23 +162,16 @@ PRODUCT_PACKAGES += \
     hwaddrs \
     hcitool
 
-# The splashscreen and Offmode charging
+# The splashscreen
 PRODUCT_COPY_FILES += \
     device/lge/victor-common/recovery/rmt_storage/rmt_storage:/root/sbin/rmt_storage \
-    device/lge/victor-common/misc/chargerlogo:/root/sbin/chargerlogo \
     device/lge/victor-common/misc/wallpaper:/root/sbin/wallpaper \
     device/lge/victor-common/misc/initlogo.rle:root/initlogo.rle \
-    device/lge/victor-common/misc/chargerimages/battery_bg.rle:/root/chargerimages/battery_bg.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_01.rle:/root/chargerimages/battery_charging_01.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_02.rle:/root/chargerimages/battery_charging_02.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_03.rle:/root/chargerimages/battery_charging_03.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_04.rle:/root/chargerimages/battery_charging_04.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_05.rle:/root/chargerimages/battery_charging_05.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_06.rle:/root/chargerimages/battery_charging_06.rle \
-    device/lge/victor-common/misc/chargerimages/battery_charging_warning.rle:/root/chargerimages/battery_charging_warning.rle \
-    device/lge/victor-common/misc/chargerimages/battery_wait_ani_01.rle:/root/chargerimages/battery_wait_ani_01.rle \
-    device/lge/victor-common/misc/chargerimages/battery_wait_ani_02.rle:/root/chargerimages/battery_wait_ani_02.rle \
-    device/lge/victor-common/misc/chargerimages/black_bg.rle:/root/chargerimages/black_bg.rle
+
+# Offmode charging
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
 
 # config files
 PRODUCT_COPY_FILES += \
